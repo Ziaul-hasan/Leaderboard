@@ -223,3 +223,52 @@ hr{
         gap: 20px;
     }
 }
+
+/* responsive styles for tablet */
+@media screen and (min-width: 669px) and (max-width: 992px) {
+    .nav{
+        display: none;
+    }
+    .nav.mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fa-bars{
+        font-size: 20px;
+        color: white;
+    }
+    main{
+        width: 100%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .player img{
+        width: 100px;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 20px;
+    }
+    .blog{
+        display: flex;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    .lower-part{
+        margin: 30px 45px;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+
+
+    
