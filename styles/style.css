@@ -12,6 +12,9 @@ body{
     background-color: #562EFF;
     padding: 10px 30px;
 }
+.nav.mobile{
+    display: none;
+}
 .icon{
     display: flex;
     align-items: center;
@@ -162,4 +165,61 @@ hr{
     padding: 5px 8px;
     border-radius: 20px;
     background-color: #FFE4E8;
+}
+.hide{
+    display: none;
+}
+
+/* responsive styles for mobile device */
+@media screen and (max-width: 668px) {
+    .nav{
+        display: none;
+    }
+    .nav.mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fa-bars{
+        font-size: 20px;
+        color: white;
+    }
+    main{
+        width: 100%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .player{
+        display: flex;
+        flex-direction: column;
+    }
+    .player img{
+        width: 120px;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .blog img{
+        width: 230px;
+        height: 150px;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 }
